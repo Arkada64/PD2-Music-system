@@ -1,0 +1,13 @@
+PD2 Music System uses the following third-party software, compiled into dlls\main.dll:
+
+miniaudio - https://miniaud.io - by David Reid
+  Dual licensed: public domain (Unlicense) or MIT No Attribution.
+
+stb_vorbis - https://github.com/nothings/stb - by Sean Barrett
+  Dual licensed: public domain (Unlicense) or MIT.
+
+RE-UE4SS - https://github.com/UE4SS-RE/RE-UE4SS
+  MIT License. The mod is a UE4SS C++ mod and links against UE4SS (installed separately by the user).
+  Unreal Engine headers used by UE4SS are subject to the Unreal Engine EULA and are not redistributed here.
+
+PAYDAY 2 music is included and is the property of OVERKILL / Starbreeze and the respective rights holders.

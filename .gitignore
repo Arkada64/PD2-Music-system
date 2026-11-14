@@ -1,0 +1,19 @@
+# build output and fetched dependencies
+src/RE-UE4SS/
+src/out/
+src/out_*/
+src/dist/
+src/build_log.txt
+src/github_user.txt
+
+# music and per-user files (never committed)
+mod/PD2MusicSystem/music/*
+!mod/PD2MusicSystem/music/PUT_MUSIC_HERE.txt
+mod/PD2MusicSystem/dlls/
+mod/PD2MusicSystem/config.txt
+mod/PD2MusicSystem/selected.txt
+mod/PD2MusicSystem/jukebox_log.txt
+mod/PD2MusicSystem/music_volume_backup.txt
+*.ogg
+*.wem
+*.bnk

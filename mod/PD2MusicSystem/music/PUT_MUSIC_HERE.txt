@@ -1,0 +1,27 @@
+Put the music files in this folder.
+
+Expected layout:
+
+  music\
+    jukebox_index.txt
+    loudness.txt        (optional: per-song volume trim, id <TAB> dB)
+    track_01 - Black Yellow Moebius\setup.ogg
+    track_01 - Black Yellow Moebius\control.ogg
+    track_01 - Black Yellow Moebius\anticipation.ogg
+    track_01 - Black Yellow Moebius\assault.ogg
+    ...
+
+Audio format: Ogg Vorbis, 44100 Hz, stereo.
+
+jukebox_index.txt: one line per music file, with 6 fields separated by TABs:
+
+  track_id <TAB> display name <TAB> phase <TAB> file (relative to this folder) <TAB> loop start <TAB> loop end
+
+- phase: setup, control, anticipation or assault
+- loop start / loop end: sample frames at 44100 Hz. Playback starts at frame 0 (the intro). After that it loops from loop start to loop end.
+- A phase listed more than once is a set of variants. One is picked at random every time the loop comes around.
+- Break the Rules (track_50): name its assault files assault_v1.ogg (regular assaults) and assault_v2.ogg (final assault).
+- Songs are shown in the lobby list sorted by display name.
+
+Example line:
+track_01	Black Yellow Moebius	setup	track_01 - Black Yellow Moebius\setup.ogg	1735254	3123402
